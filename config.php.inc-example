@@ -1,0 +1,12 @@
+<?php
+$host     = 'localhost';
+$username = 'user42';
+$password = 'my secret password';
+$dbname   = 'database42';
+$port     = null;
+
+$sql = 'SHOW VARIABLES';
+
+$filename = null;
+$separator = ",";
+
