@@ -19,8 +19,8 @@ $headers = array();
 while ($fieldinfo = $result->fetch_field()) {
 	$headers[] = $fieldinfo->name;
 }
-fputcsv($output, $headers, $separator);
+fputcsv($output, $headers, $separator ?? ',');
 while ($row = $result->fetch_array(MYSQLI_NUM)) {
-	fputcsv($output, array_values($row), $separator);
+	fputcsv($output, array_values($row), $separator ?? ',');
 }
 
