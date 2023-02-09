@@ -5,8 +5,9 @@ $password = 'my secret password';
 $dbname   = 'database42';
 $port     = null;
 
-$sql = 'SHOW VARIABLES';
+$sql = <<<'END'
+	SHOW VARIABLES
+	END;
 
 $filename = null;
 $separator = ",";
-
